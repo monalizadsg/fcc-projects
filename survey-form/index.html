@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta email="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1 id="title">
+          <span id="highlight">CodingJourney</span> Survey Form
+        </h1>
+        <p id="description">
+          Thank you for taking the time to share your journey.
+        </p>
+      </div>
+      <div class="form-container">
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="age" id="number-label">Age</label>
+            <input
+              type="number"
+              id="number"
+              name="age"
+              class="form-control"
+              placeholder="Age"
+              min="10"
+              max="100"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which option describes your current level?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected>Select your current level</option>
+              <option value="beginner">Beginner (no prior experience)</option>
+              <option value="intermediate"
+                >Intermediate (with >1yr webdev experience)</option
+              >
+              <option value="advanced"
+                >Advanced (with 2years&up webdev experience)</option
+              >
+            </select>
+          </div>
+          <div class="form-group">
+            <p>
+              How many hours would you spend to study and practice coding in a
+              day?
+            </p>
+            <label>
+              <input
+                type="radio"
+                name="user-studyhours"
+                value="1-2 hours"
+                class="input-radio"
+                checked
+              />
+              1-2 hours
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="user-studyhours"
+                value="4-6 hours"
+                class="input-radio"
+              />
+              4-6 hours
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="user-studyhours"
+                value="more than 8hours"
+                class="input-radio"
+              />
+              more than 8 hours
+            </label>
+          </div>
+          <div class="form-group">
+            <p>
+              What languages/library/framework do you want to focus on?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="javascript"
+                class="input-checkbox"
+              />
+              JavaScript
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="java"
+                class="input-checkbox"
+              />
+              Java
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="react"
+                class="input-checkbox"
+              />
+              React
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="vue"
+                class="input-checkbox"
+              />
+              Vue
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="swift"
+                class="input-checkbox"
+              />
+              Swift
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="Kotlin"
+                class="input-checkbox"
+              />
+              Kotlin
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="nodejs"
+                class="input-checkbox"
+              />
+              NodeJS
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="language"
+                value="dotnet"
+                class="input-checkbox"
+              />
+              .Net
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              name="comment"
+              id="comments"
+              class="input-textarea"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
