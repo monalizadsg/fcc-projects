@@ -21,9 +21,9 @@
           </div>
           <nav id="nav-bar">
             <ul>
-              <li><a class="nav-link" href="#about"></a>About</li>
-              <li><a class="nav-link" href="#how-it-works"></a>How it works</li>
-              <li><a class="nav-link" href="#pricing"></a>Pricing</li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+              <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
           </nav>
         </header>
@@ -31,9 +31,9 @@
           <div class="product-form-details">    
             <h1><span id="highlight">But first,</span> Coffee</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget <br>
-              egestas purus viverra accumsan in nisl nisi scelerisque. Enim nulla <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do   
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget 
+              egestas purus viverra accumsan in nisl nisi scelerisque. Enim nulla 
               aliquet porttitor lacus.
             </p>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
@@ -53,15 +53,17 @@
             </form>
           </div>
         </section>
-        <div class="container">
-          <section id="about" class="product-about">
-            <img
+        <div class="container main-product">
+          <section id="about" class="product-about row">
+            <div class="column">
+              <img
               src="assets/coffee.jpg"
               alt="coffee photo from unsplash"
-              width="500px"
-              height="500px"
+              width="400px"
+              height="400px"
             />
-            <div class="product-details">
+            </div>
+            <div class="main-product-details column">
               <h1>Coffee Blend</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,10 +75,10 @@
               </p>
             </div>
           </section>
-          <section id="how-it-works">
+          <section id="how-it-works" class="product-works">
             <h4 id="title">How does this work?</h4>
-            <div class="features-wrapper">
-              <div class="feature">
+            <div class="features-wrapper row">
+              <div class="feature column">
                 <img
                   src="assets/bean.png"
                   alt="bean icon from flaticon"
@@ -86,7 +88,7 @@
                 <h4>Choose your perfect coffee</h4>
                 <p>Choose and pick from our fresh beans selection.</p>
               </div>
-              <div class="feature">
+              <div class="feature column">
                 <img
                   src="assets/calendar.png"
                   alt="calendar icon from flaticon"
@@ -99,7 +101,7 @@
                   anytime you want.
                 </p>
               </div>
-              <div class="feature">
+              <div class="feature column">
                 <img
                   src="assets/deliver.png"
                   alt="deliver icon from flaticon"
@@ -110,31 +112,31 @@
                 <p>Fresh coffee will be delivered to you.</p>
               </div>
             </div>
-          </section>
-          <section class="product-video">
-            <div class="video">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/z_vjmRdF0e4"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+            <div class="product-video row">
+              <div class="video column">
+                <iframe
+                  width="450"
+                  height="280"
+                  src="https://www.youtube.com/embed/z_vjmRdF0e4"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="main-product-details column">
+                <h1>Coffee Beans Live</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  volutpat consequat mauris nunc congue. Convallis tellus id
+                  interdum velit laoreet id donec ultrices. Ultricies integer quis
+                  auctor elit. Hendrerit dolor magna eget est lorem ipsum.
+                </p>
+              </div>
             </div>
-            <div>
-              <h4>Coffee Beans Live</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                volutpat consequat mauris nunc congue. Convallis tellus id
-                interdum velit laoreet id donec ultrices. Ultricies integer quis
-                auctor elit. Hendrerit dolor magna eget est lorem ipsum.
-              </p>
-            </div>
           </section>
-          <section id="pricing">
-            <div class="product">
+          <section id="pricing" class="row">
+            <div class="product-pricing column">
               <div class="product-image">
                 <img
                   src="assets/arabica-coffee.png"
@@ -148,7 +150,7 @@
                 <h4>From $20</h4>
               </div>
             </div>
-            <div class="product">
+            <div class="product-pricing column">
               <div class="product-image">
                 <img
                   src="assets/ethiopia-coffee.png"
@@ -162,7 +164,7 @@
                 <h4>From $20</h4>
               </div>
             </div>
-            <div class="product">
+            <div class="product-pricing column">
               <div class="product-image">
                 <img
                   src="assets/brazil-coffee.png"
@@ -177,16 +179,16 @@
               </div>
             </div>
           </section>
-          <footer>
-            <ul>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <span>&#169; 2020, Coffee House || monadsg</span>
-          </footer>
         </div>
       </div>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>&#169; 2020, Coffee House || monadsg</span>
+      </footer>
     </div>
   </body>
 </html>

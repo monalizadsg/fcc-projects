@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 * {
   margin: 0;
@@ -7,13 +8,9 @@
 }
 
 body {
-  background-color: #fef6e4;
+  background-color: #f6f6f4;
   font-family: "Raleway", sans-serif;
 }
-/* 
-.page-wrapper {
-  position: relative;
-} */
 
 .container {
   max-width: 1000px;
@@ -23,6 +20,7 @@ body {
 
 header {
   position: fixed;
+  width: 100%;
   top: 0;
   padding: 0 20px;
   display: flex;
@@ -40,6 +38,7 @@ li {
 a {
   color: #000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -74,6 +73,11 @@ a {
   list-style: none;
 }
 
+.nav-link:hover {
+  color: #0d0d0d;
+  font-weight: 600;
+}
+
 #nav-bar > ul {
   width: 35vw;
   display: flex;
@@ -82,6 +86,7 @@ a {
 }
 
 #product-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,71 +96,249 @@ a {
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    flex-wrap: wrap;
-  }
-  .logo {
-    font-size: 0.7rem;
-    padding: 0;
-  }
-
-  .logo > img {
-    margin: 0 auto;
-  }
-
-  #product-form {
-    margin-top: 120px;
-  }
-}
-
-.sticky {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-}
-
 #product-form {
-  height: 680px;
+  height: 100vh;
+  width: 100%;
   margin-top: 70px;
   background: url(assets/coffee-beans.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .product-form-details {
+  width: 40vw;
+  color: #2a2a2a;
+  font-weight: bold;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
-  margin-left: 30px;
-  border: 1px solid red;
+  margin-left: 50px;
 }
 
 .product-form-details > h1 {
   margin-bottom: 20px;
-  word-wrap: break-word;
+  font-size: 3.5rem;
+  font-family: "Concert One", cursive;
+  color: #ff8e3c;
+}
+
+.product-form-details #highlight {
+  font-style: italic;
+}
+
+.product-form-details > p {
+  text-align: center;
 }
 
 .product-form-details input[type="email"] {
   max-width: 275px;
   margin-top: 20px;
+  font-size: 1rem;
+  border: 1px solid #0d0d0d;
   width: 100%;
-  padding: 5px;
+  padding: 8px;
 }
 
 .product-form-details input[type="submit"] {
   max-width: 150px;
   width: 100%;
-  height: 30px;
+  height: 38px;
+  text-transform: uppercase;
   margin: 15px 0;
   border: 0;
-  background-color: #f25042;
+  border-radius: 5px;
+  color: #0d0d0d;
+  background-color: #ff8e3c;
 }
 
 .product-form-details input[type="submit"]:hover {
   color: white;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.main-product section {
+  height: 100vh;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.main-product-details h1 {
+  text-align: center;
+  color: #0d0d0d;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main-product-details p,
+.product-video p,
+.product-details h2,
+.product-details h4 {
+  text-align: center;
+  line-height: 1.5;
+}
+
+#title {
+  font-size: 2rem;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.features-wrapper {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feature {
+  margin: 5% 0;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+}
+
+.feature > img,
+.product-image > img {
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    border: red solid 1px;
+    width: 100vw;
+  }
+  .logo {
+    padding: 0;
+    margin-top: 15px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    border: red solid 1px;
+  }
+
+  .logo > img {
+    margin: 0 auto;
+    border: red solid 1px;
+  }
+
+  .logo #brand {
+    font-size: 2.2rem;
+  }
+
+  #nav-bar {
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  #nav-bar li {
+    padding-bottom: 5px;
+  }
+
+  #nav-bar > ul {
+    flex-direction: column;
+  }
+
+  #product-form {
+    margin-top: 120px;
+    width: 100vw;
+    height: 80vh;
+    font-size: 0.5rem;
+    border: solid orange 2px;
+  }
+
+  .product-form-details {
+    width: 90%;
+    color: black;
+    justify-content: center;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    border: green solid 2px;
+  }
+
+  .product-form-details h1 {
+    font-size: 2rem;
+  }
+  .product-form-details p {
+    /* background-color: white; */
+    text-align: left;
+    color: orange;
+    margin-top: 10px;
+  }
+
+  .main-product section {
+    height: auto;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  #how-it-works {
+    border: solid 1px orange;
+    flex-wrap: wrap;
+  }
+
+  #title {
+    font-size: 1.2rem;
+  }
+
+  .feature {
+    font-size: 0.8em;
+  }
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #444;
 }
