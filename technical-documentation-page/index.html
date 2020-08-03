@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Basics</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#What_is_JavaScript?"
+            >What is JavaScript?</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_types">Data types</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Conditional_statements"
+            >Conditional statements</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_JavaScript?">
+        <header>What is JavaScript?</header>
+        <article>
+          <p>
+            JavaScript ("JS" for short) is a full-fledged dynamic programming
+            language that can add interactivity to a website. It was invented by
+            Brendan Eich (co-founder of the Mozilla project), the Mozilla
+            Foundation, and the Mozilla Corporation.
+          </p>
+          <p>
+            JavaScript is versatile and beginner-friendly. With more experience,
+            you'll be able to create games, animated 2D and 3D graphics,
+            comprehensive database-driven apps, and much more!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            Variables are containers that store values. You start by declaring a
+            variable with the var (less recommended, dive deeper for the
+            explanation) or the let keyword, followed by the name you give to
+            the variable:
+          </p>
+          <code>let myVariable;</code>
+          <p>After declaring a variable, you can give it a value:</p>
+          <code>myVariable = 'Bob';</code>
+          <p>Also, you can do both these operations on the same line:</p>
+          <code>let myVariable = 'Bob';</code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>The latest ECMAScript standard defines nine types:</p>
+          <ul>
+            <li>
+              <p>Six data types that are primitives:</p>
+              <ul>
+                <li>Boolean. true and false.</li>
+                <li>
+                  undefined. A top-level property whose value is undefined.
+                </li>
+                <li>Number. 12345.</li>
+                <li>String. "Hello World"</li>
+                <li>BigInt. It represent integers with arbitrary precision.</li>
+                <li>Symbol. A unique and immutable primitive value.</li>
+              </ul>
+            </li>
+            <li>
+              null. Special primitive type having additional usage for its
+              value: if object is not inherited, then null is shown.
+            </li>
+            <li>Object</li>
+            <li>and Function</li>
+          </ul>
+          <p>
+            The typeof operator can help you to find the type of your variable.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Conditional_statements">
+        <header>Conditional statements</header>
+        <article>
+          <p>
+            <strong>If...else</strong> executes a statement if a specified
+            condition is truthy. If the condition is falsy, another statement
+            can be executed.
+          </p>
+          <code>if (condition) { statement_1; } else { statement_2; }</code>
+
+          <p>
+            <strong>while statement</strong> creates a loop that executes a
+            specified statement as long as the test condition evaluates to true.
+            The condition is evaluated before executing the statement.
+          </p>
+          <code>while (condition) { statement } </code>
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          <p>
+            Functions are one of the fundamental building blocks in JavaScript.
+            A function is a JavaScript procedure—a set of statements that
+            performs a task or calculates a value.
+          </p>
+          <p>Two ways to declare a function:</p>
+          <ol>
+            <li>Function Declaration</li>
+            <p>
+              A function definition (also called a function declaration, or
+              function statement) consists of the function keyword, followed by:
+            </p>
+            <ul>
+              <li>The name of the function.</li>
+              <li>
+                A list of parameters to the function, enclosed in parentheses
+                and separated by commas.
+              </li>
+              <li>
+                The JavaScript statements that define the function, enclosed in
+                curly brackets, {...}.
+              </li>
+            </ul>
+            <p>
+              For example, the following code defines a simple function named
+              square:
+            </p>
+            <code>
+              function square(number) { <br />
+              return number * number; <br />
+              }
+            </code>
+            <p>
+              The function square takes one parameter, called number. The
+              function consists of one statement that says to return the
+              parameter of the function (that is, number) multiplied by itself.
+              The statement return specifies the value returned by the function.
+            </p>
+            <li>Function expressions</li>
+            <p>
+              Such a function can be anonymous; it does not have to have a name.
+              For example, the function square could have been defined as:
+            </p>
+            <code>
+              const square = function(number) { return number * number } <br />
+              var x = square(4) // x gets the value 16
+            </code>
+            <p>
+              Function expressions are convenient when passing a function as an
+              argument to another function.
+            </p>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>
+            All the documentation in this page is taken from
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+              target="_blank"
+              >MDN.</a
+            >
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
