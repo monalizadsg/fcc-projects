@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  background-color: #9b82b9;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-right: 50px;
+}
+
+.navbar-list li {
+  margin-right: 20px;
+}
+
+.navbar-list li:last-child {
+  margin-right: 0;
+}
+
+.navbar-list a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #684d89;
+}
+
+.navbar-list a:hover {
+  color: white;
+}
+
+/* Welcome section */
+#welcome-section {
+  height: 100vh;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9b82b9;
+}
+
+#welcome-section h1 {
+  font-size: 2.5rem;
+}
+
+#welcome-section p {
+  font-size: 1.8rem;
+  color: #8768ab;
+  font-style: italic;
+}
+
+
+/* Project section */
+.projects-section {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #303841;
+}
+
+
+.project-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-card {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8e72b0;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.project-card:last-child {
+  margin-right: 0;
+}
+
+.project-card a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* contact section */
+.contact-section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F4;
+}
+
+.contact-section h2 {
+  padding: 10px;
+}
+
+.contact-links {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #684d89;
+}
+
+.contact-links a:hover {
+  color: red;
+}
+
+/* Footer */ 
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #F1F1F1;
+}
+
+footer > span {
+  font-size: 0.9em;
+  color: #444;
+}
+
+
+@media only screen and (max-width: 990px) {
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section p {
+    font-size: 1.5rem;
+  }
+
+  .project-card:nth-child(2) {
+    margin-right: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+  }
+
+  .navbar-list {
+    padding-right: 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.5rem;
+  }
+
+  #welcome-section p {
+    font-size: 0.8rem;
+  }
+
+  .project-card {
+    margin-right: 0;
+   
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+}
